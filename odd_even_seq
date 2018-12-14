@@ -1,0 +1,20 @@
+#list append using odd and even sequence
+List1 = [-1,-2,3,4,5,6,7,8,9,10,11,12,14,15,19,20,0,0]
+#List1 = range(0,10)
+#List1 = int(input("enter no"))
+#List2 = List1+20
+even_list = []
+odd_list = []
+final = []
+def odd_even():
+    for i in List1 :
+    #for i in range(List1,List2):
+        if (i % 2 == 0):
+            even_list.append(i)
+        else:
+            odd_list.append(i)
+    print(even_list)
+    print(odd_list)
+    final = [*even_list,*odd_list]
+    print(final)
+odd_even()
